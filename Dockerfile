@@ -11,6 +11,9 @@ WORKDIR /app
 # Copy the repo contents
 COPY . /app
 
+# Make the Gradle wrapper executable
+RUN chmod +x ./gradlew
+
 # Build the project
 RUN ./gradlew clean install
 
