@@ -15,7 +15,7 @@ COPY . /app
 RUN ./gradlew clean install
 
 # Expose GROBID port
-EXPOSE 8070
+EXPOSE 10000
 
 # Start GROBID
 CMD ["./gradlew", "run"]
